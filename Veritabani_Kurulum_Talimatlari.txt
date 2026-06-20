@@ -8,10 +8,10 @@ Bu talimatlar, komut istemi (CMD) uzerinden NWneonv1.0.bak yedek dosyasindan 'pe
 3. Asagidaki komutu CMD ekranina yapistirip Enter'a basin:
 
 Eger SQL Server surumunuz ucretsiz SQLEXPRESS ise:
-sqlcmd -S .\SQLEXPRESS -E -Q "RESTORE DATABASE per10Database FROM DISK='C:\Yedek\NWneonv1.0.bak' WITH REPLACE"
+sqlcmd -S .\SQLEXPRESS -E -Q "RESTORE DATABASE per10Database FROM DISK='C:\yedek\NWneonv1.0.bak' WITH REPLACE"
 
 Eger SQL Server tam surum (sadece localhost veya bilgisayar adi) kullaniyorsaniz:
-sqlcmd -S localhost -E -Q "RESTORE DATABASE per10Database FROM DISK='C:\Yedek\NWneonv1.0.bak' WITH REPLACE"
+sqlcmd -S localhost -E -Q "RESTORE DATABASE per10Database FROM DISK='C:\yedek\NWneonv1.0.bak' WITH REPLACE"
 
 --- Onemli Notlar ---
 * -S .\SQLEXPRESS : SQL Sunucu adidir. Kocaeli'ndeki bilgisayarin SQL ismine gore burayi degistirmeniz gerekebilir.
